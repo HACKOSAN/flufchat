@@ -4,21 +4,16 @@ from firebase_admin import credentials, db
 import json
 from datetime import datetime
 
-
-
 cred = credentials.Certificate('serviceAccountKey.json')
 
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://flufchat-default-rtdb.firebaseio.com/'
 })
 
-
 def red(text):
     return f"\033[91m{text}\033[0m"
-
 def green(text):
     return f"\033[92m{text}\033[0m"
-
 
 def add_user(username, age, email):
     # Get a database reference to the 'users' node
@@ -92,8 +87,6 @@ def main():
             break
         else:
             print(red("\nInvalid choice. Please try again."))
-
-
 
 
 if __name__ == "__main__":
