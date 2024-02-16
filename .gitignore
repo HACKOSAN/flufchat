@@ -1,0 +1,12 @@
+# Ignore serviceAccountKey.json
+serviceAccountKey.json
+
+# Ignore the .git directory
+.git/
+
+# Ignore the env directory
+env/
+
+# Ignore data.json
+data.json
+
